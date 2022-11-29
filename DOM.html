@@ -1,0 +1,39 @@
+<!DOCTYPE html> 
+
+<html>
+    <body>
+        <script>
+            function clickythingy(idInput, idSpan) {
+                var text = document.getElementById(idInput).value;
+                document.getElementById(idSpan).innerText = text;
+                console.log(text);
+            }
+        </script>
+    <br>
+        <label>Input here: </label>
+        <input type = "text" id = "input1">
+        <div>
+            <button onclick = "clickythingy('input1', 'span1');">touchme</button>
+        </div>
+        <span id = "span1"></span> 
+
+    <br>
+        <label>Another input here: </label>
+        <input type = "text" id = "input2">
+        <div>
+            <button onclick = "clickythingy('input2', 'span2');">touchme</button>
+        </div>
+        <span id = "span2"></span> 
+
+    <br>
+        <label>Last input here: </label>
+        <input type = "text" id = "input3">
+        <div>
+            <button onclick = "clickythingy('input3', 'span3')">touchme</button>
+        </div>
+        <span id = "span3"></span> 
+        
+    </body>
+    
+</html>
+

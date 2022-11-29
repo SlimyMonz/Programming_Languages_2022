@@ -88,7 +88,6 @@ problem2 n = [fib x | x <- [1..y], endsWith3 (fib x) n]
 
 
 isqrt = floor.sqrt.fromInteger
--- this doesn't work because it fucking makes everything isPrime
 
 
 factorOf3orMod5 :: Integer -> Bool
